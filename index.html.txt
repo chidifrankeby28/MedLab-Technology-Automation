@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MEDLAB AUTOMATION UPDATES</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f8fb;
+            color: #333;
+        }
+
+        header {
+            background: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #00509e;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 30px;
+        }
+
+        h2 {
+            color: #003366;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background: #003366;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        img {
+            width: 100%;
+            max-height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>MEDLAB AUTOMATION UPDATES</h1>
+    <p>Medical Laboratory Science | Innovation | Automation | Technology</p>
+</header>
+
+<nav>
+    <a href="#news">MLS News</a>
+    <a href="#areas">MLS Areas</a>
+    <a href="#automation">Automation Updates</a>
+    <a href="#about">About</a>
+</nav>
+
+<section id="news">
+    <h2>Medical Laboratory Science News & Updates</h2>
+
+    <div class="card">
+        <h3>DCLS / MLS Developments</h3>
+        <p>
+            Stay updated with the latest developments in Doctorate in Clinical Laboratory Science (DCLS) 
+            and Medical Laboratory Science (MLS) programs globally. 
+            Emerging technologies are transforming diagnostic accuracy and patient care.
+        </p>
+    </div>
+</section>
+
+<section id="areas">
+    <h2>Areas in Medical Laboratory Science</h2>
+
+    <div class="card">
+        <h3>Medical Microbiology</h3>
+        <p>
+            Focuses on identification of infectious agents such as bacteria, viruses, fungi, and parasites.
+            Modern automation now includes PCR systems and rapid molecular diagnostics.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Chemical Pathology</h3>
+        <p>
+            Also known as Clinical Chemistry. It deals with biochemical analysis of blood and body fluids.
+            Automated analyzers now improve speed and precision.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Hematology</h3>
+        <p>
+            Study of blood and blood disorders. Advanced hematology analyzers provide complete blood counts (CBC)
+            with high precision.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Histopathology</h3>
+        <p>
+            Examination of tissues for disease diagnosis. Digital pathology and AI integration 
+            are modern innovations in this field.
+        </p>
+    </div>
+</section>
+
+<section id="automation">
+    <h2>Laboratory Automation & Innovation</h2>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1581093588401-22d65e1d0c87" alt="Lab Automation">
+        <p>
+            Automation reduces human error, increases efficiency, and enhances turnaround time in laboratories.
+            Robotics, AI diagnostics, and integrated laboratory systems are shaping the future of MLS.
+        </p>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About This Platform</h2>
+    <div class="card">
+        <p>
+            MEDLAB AUTOMATION UPDATES is a professional platform dedicated to 
+            Medical Laboratory Science innovations, technology, and automation insights.
+        </p>
+        <p><strong>Curated by OFOMA CHIDIEBERE FRANCIS</strong></p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 MEDLAB AUTOMATION UPDATES | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
