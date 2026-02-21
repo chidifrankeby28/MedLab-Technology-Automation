@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MEDLAB AUTOMATION UPDATES</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display:flex;
+    background:#f4f8fb;
+}
+
+/* Sidebar */
+.sidebar{
+    width:250px;
+    height:100vh;
+    background:#002b5c;
+    color:white;
+    padding:20px;
+    position:fixed;
+}
+
+.sidebar h2{
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar ul li{
+    margin:15px 0;
+}
+
+.sidebar ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.sidebar ul li a:hover{
+    color:#00c3ff;
+}
+
+/* Main Content */
+.main{
+    margin-left:250px;
+    padding:30px;
+    width:100%;
+}
+
+.header{
+    background:#00509e;
+    padding:20px;
+    color:white;
+    border-radius:8px;
+}
+
+.search-box{
+    margin-top:15px;
+}
+
+.search-box input{
+    padding:8px;
+    width:250px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    margin:20px 0;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+button{
+    padding:8px 15px;
+    background:#00509e;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#003f7d;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+    background:#002b5c;
+    color:white;
+    border-radius:8px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .sidebar{
+        width:100%;
+        height:auto;
+        position:relative;
+    }
+
+    .main{
+        margin-left:0;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="sidebar">
+    <h2>MEDLAB APP</h2>
+    <ul>
+        <li><a href="#" onclick="showSection('dashboard')">Dashboard</a></li>
+        <li><a href="#" onclick="showSection('news')">MLS News</a></li>
+        <li><a href="#" onclick="showSection('areas')">MLS Areas</a></li>
+        <li><a href="#" onclick="showSection('automation')">Automation</a></li>
+        <li><a href="#" onclick="showSection('about')">About</a></li>
+    </ul>
+</div>
+
+<div class="main">
+
+    <div class="header">
+        <h1>MEDLAB AUTOMATION UPDATES</h1>
+        <p>Innovation | Technology | Laboratory Science</p>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search topics...">
+            <button onclick="searchContent()">Search</button>
+        </div>
+    </div>
+
+    <!-- Dashboard -->
+    <div id="dashboard" class="content-section">
+        <div class="card">
+            <h2>Welcome to the MedLab Automation App</h2>
+            <p>This platform provides structured updates on Medical Laboratory Science innovations and automation technologies.</p>
+        </div>
+    </div>
+
+    <!-- News -->
+    <div id="news" class="content-section" style="display:none;">
+        <div class="card">
+            <h2>DCLS / MLS Global Updates</h2>
+            <p>Advanced diagnostic technologies such as AI-driven analyzers and molecular automation are transforming laboratory medicine.</p>
+        </div>
+
+        <div class="card">
+            <h2>Emerging Lab Technologies</h2>
+            <p>Automation systems now integrate robotics, LIS systems, and real-time data analytics.</p>
+        </div>
+    </div>
+
+    <!-- Areas -->
+    <div id="areas" class="content-section" style="display:none;">
+        <div class="card">
+            <h3>Medical Microbiology</h3>
+            <p>Automated culture systems and PCR diagnostics improve infectious disease detection.</p>
+        </div>
+
+        <div class="card">
+            <h3>Chemical Pathology</h3>
+            <p>High-throughput biochemical analyzers ensure accurate metabolic profiling.</p>
+        </div>
+
+        <div class="card">
+            <h3>Hematology</h3>
+            <p>Modern CBC machines reduce turnaround time and improve diagnostic reliability.</p>
+        </div>
+
+        <div class="card">
+            <h3>Histopathology</h3>
+            <p>Digital slide scanning and AI interpretation are redefining tissue diagnosis.</p>
+        </div>
+    </div>
+
+    <!-- Automation -->
+    <div id="automation" class="content-section" style="display:none;">
+        <div class="card">
+            <h2>Laboratory Automation Systems</h2>
+            <p>Robotic arms, conveyor systems, and integrated analyzers increase laboratory efficiency.</p>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div id="about" class="content-section" style="display:none;">
+        <div class="card">
+            <h2>About This App</h2>
+            <p>Professional platform focused on Medical Laboratory Science, innovation and automation.</p>
+            <p><strong>Curated by OFOMA CHIDIEBERE FRANCIS</strong></p>
+        </div>
+    </div>
+
+    <footer>
+        © 2026 MEDLAB AUTOMATION UPDATES | All Rights Reserved
+    </footer>
+
+</div>
+
+<script>
+function showSection(sectionId){
+    let sections = document.querySelectorAll('.content-section');
+    sections.forEach(section => section.style.display = 'none');
+    document.getElementById(sectionId).style.display = 'block';
+}
+
+function searchContent(){
+    let input = document.getElementById("searchInput").value.toLowerCase();
+    alert("Search feature coming soon for: " + input);
+}
+</script>
+
+</body>
+</html>
